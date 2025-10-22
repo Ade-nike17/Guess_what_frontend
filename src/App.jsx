@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import io from "socket.io-client";
 
+console.log("🔍 VITE_API_URL:", import.meta.env.VITE_API_URL);
+console.log("🔍 VITE_SOCKET_URL:", import.meta.env.VITE_SOCKET_URL);
+
 const socket = io(import.meta.env.VITE_SOCKET_URL);
 
 export default function App() {
